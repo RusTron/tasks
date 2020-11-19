@@ -1,0 +1,149 @@
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1360px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+  @media(max-width: 1360px){
+    max-width: 1110px;
+  }
+
+  &__list{
+    display: flex;
+    padding-top: 5px;
+    color: #c3c3c3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    padding-left: 0;
+    width: 500px;
+  }
+
+  &__list-item{
+    list-style: none;
+    padding-right: 36px;
+    height: 100%;
+    text-align: start;
+  }
+
+  &__list-link{
+    text-decoration: none;
+    color: #c2c2c2;
+    width: 100%;
+    height: 100%;
+    text-align: start;
+  }
+
+  &__active-link{
+    color: #fff;
+
+    &:after{
+      position: relative;
+      top: 18px;
+      content: '';
+      display: block;
+      background-color:#ffc925;
+      height: 2px;
+      width: calc(100% + 45%);
+    }
+  }
+
+  &__button {
+    background-color: #FF8900;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 124px;
+  
+    &-text {
+      position: relative;
+      bottom: 2px;
+      padding-left: 11px;
+      font-family: "Myriad Pro", sans-serif;
+      color: #fff;
+    }
+  }
+}
+
+.login{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: auto;
+  outline: 0;
+  height: 100%;
+  background-color: rgba(53, 36, 36, 0.85);
+  animation: modal .5s;
+
+  &__form {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    height: 300px;
+  }
+
+  &__form-text, &__form-password {
+    width: 300px;
+    height:50px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    padding-left: 40px;
+    border-color: #FF8900;
+    outline: #FF8900;
+
+    &:hover {
+      box-shadow: 0 0 6px 3px rgba(189, 138, 30, 0.35);
+    }
+  }
+
+  &__form-input{
+    position: relative;
+  }
+
+  &__form-error{
+    position: absolute;
+    color: rgb(247, 152, 152);
+    font-size: 11px;
+    bottom: 8px;
+    left: 20px;
+  }
+
+  &-submit{
+    padding: 13px 30px;
+    margin: 5px 0 20px 0;
+    font-size: 15px;
+    color: #fff;
+    background-color: #FF8900;
+    border: none;
+    border-bottom: 4px solid #FF8900;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    outline-color: #FF8900;
+
+    &:hover{
+      transition: all 0.5s;
+      background: #fff;
+      color: #FF8900;
+    }
+  }
+}
+
+@keyframes modal{
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}

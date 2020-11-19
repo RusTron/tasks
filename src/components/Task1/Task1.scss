@@ -1,0 +1,36 @@
+.block{
+  background-color: rgb(150, 142, 142);
+  font-size: 18px;
+
+  &__convert {
+    background-color: rgb(150, 142, 142);
+    padding: 20px 0 0 50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    font-size: 18px;
+
+    &-item{
+      height: 30px;
+      padding-left: 10px;
+
+      &::placeholder{
+        color: rgb(185, 184, 184);
+      }
+    }
+
+    & label {
+      margin: 10px 0 3px;
+    }
+
+    &-button{
+      margin-top: 10px;
+      background-color: #FF8900;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      height: 40px;
+      font-size: 16px;
+    }
+  }
+}
