@@ -1,0 +1,38 @@
+.block{
+  background-color: rgb(150, 142, 142);
+  font-size: 18px;
+
+  &__select {
+    background-color: rgb(150, 142, 142);
+    padding: 20px 0 0 50px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+
+    &-item{
+      height: 30px;
+      padding-left: 10px;
+
+      &::placeholder{
+        color: rgb(185, 184, 184);
+      }
+    }
+
+    & label {
+      margin: 10px 5px 0 10px;
+    }
+
+    &-button {
+      background-color: #FF8900;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      height: 36px;
+      font-size: 16px;
+    }
+  }
+
+  &-addRules{
+    height: 30px;
+  }
+}

@@ -19,29 +19,38 @@ export const Header = () => {
           </li>
           <li className="nav__list-item">
             <NavLink 
-              to={'/link1'}
+              to={'/task1'}
               className={'nav__list-link'}
               activeClassName={'nav__active-link'}
             >
-              ССЫЛКА 1
+              Task 1
             </NavLink>
           </li>
           <li className="nav__list-item">
             <NavLink 
-              to={'/link2'}
+              to={'/task2'}
               className={'nav__list-link'}
               activeClassName={'nav__active-link'}
             >
-              ССЫЛКА 2
+              Task 2
             </NavLink>
           </li>
           <li className="nav__list-item">
             <NavLink 
-              to={'/link3'}
+              to={'/task3'}
               className={'nav__list-link'}
               activeClassName={'nav__active-link'}
             >
-              ССЫЛКА 3
+              Task 3
+            </NavLink>
+          </li>
+          <li className="nav__list-item">
+            <NavLink 
+              to={'/task4'}
+              className={'nav__list-link'}
+              activeClassName={'nav__active-link'}
+            >
+              Task 4
             </NavLink>
           </li>
         </ul>
